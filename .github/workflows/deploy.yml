@@ -3,11 +3,11 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - update-urls
+      - main
 
 jobs:
   deploy:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout the repository
