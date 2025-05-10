@@ -1,0 +1,11 @@
+[build]
+  publish = "."
+  command = "chmod +x blog/update-posts.sh && ./blog/update-posts.sh"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
