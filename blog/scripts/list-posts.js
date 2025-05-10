@@ -17,7 +17,7 @@ const icons = [
 
 async function fetchPostList() {
     try {
-        postGrid.innerHTML = '<div class="col-span-full text-center text-gray-400">Carregando posts...</div>';
+        postGrid.innerHTML = '<div class="col-span-full text-center text-gray-400">Loading posts...</div>';
         
         const response = await fetch('/blog/posts.json');
         if (!response.ok) throw new Error('Error loading posts list');
@@ -25,7 +25,7 @@ async function fetchPostList() {
         const posts = await response.json();
         
         if (posts.length === 0) {
-            postGrid.innerHTML = '<div class="col-span-full text-center text-gray-400">Nenhum post disponível.</div>';
+            postGrid.innerHTML = '<div class="col-span-full text-center text-gray-400">No posts available.</div>';
             return;
         }
         
@@ -42,9 +42,9 @@ async function fetchPostList() {
                     <i class="fas ${iconClass} text-2xl"></i>
                 </div>
                 <h3 class="text-xl font-bold text-white mb-3">${post.title}</h3>
-                <p class="text-gray-400 mb-4">Clique para ler este artigo</p>
+                <p class="text-gray-400 mb-4">Click to read this article</p>
                 <div class="flex items-center text-blue-400 text-sm">
-                    <span>Publicado em ${new Date(post.date).toLocaleDateString('pt-BR')}</span>
+                    <span>Published in ${new Date(post.date).toLocaleDateString('en-US')}</span>
                 </div>
             `;
             
@@ -57,7 +57,7 @@ async function fetchPostList() {
         
     } catch (error) {
         console.error('Error loading posts:', error);
-        postGrid.innerHTML = '<div class="col-span-full text-center text-gray-400">Erro ao carregar posts 😢</div>';
+        postGrid.innerHTML = '<div class="col-span-full text-center text-gray-400">Error loading posts 😢</div>';
     }
 }
 
@@ -75,7 +75,7 @@ async function loadPostContent(url, title) {
             <div class="prose prose-invert max-w-none">${htmlContent}</div>
             <div class="mt-6">
                 <button id="back-to-posts" class="px-4 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition">
-                    Voltar para posts
+                    Back to posts
                 </button>
             </div>
         `;
@@ -89,9 +89,8 @@ async function loadPostContent(url, title) {
         
     } catch (error) {
         console.error(error);
-        contentDiv.innerHTML = '<p class="text-red-400">Erro ao carregar conteúdo do post 😢</p>';
+        contentDiv.innerHTML = '<p class="text-red-400">Error loading post content 😢</p>';
     }
 }
 
-// Carregar lista de posts quando a página carregar
 document.addEventListener('DOMContentLoaded', fetchPostList);
