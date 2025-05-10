@@ -35,6 +35,10 @@
     <link rel="manifest" href="https://milesonerd.github.io/assets/image/favicon/site.webmanifest">
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         .hero-gradient {
             background: linear-gradient(135deg, #000428 0%, #004e92 100%);
         }
@@ -103,6 +107,16 @@
             min-height: 20px !important;
             object-fit: contain !important;
         }
+        .social-icons-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; 
+            gap: 10px;
+            padding: 10px;
+            max-width: 100%;
+            overflow-x: auto;
+        }
+
 
         @media (max-width: 640px) { 
             .social-icon {
@@ -213,7 +227,7 @@
                         <span class="ml-3 text-xl font-bold text-white">Enzo Fuke</span>
                     </div>
                     <p class="text-gray-400 mb-4">If it hasn't worked out yet, it's because it's not over yet</p>
-                    <div class="flex space-x-4">
+                    <div class="social-icons-container">
                         <a href="https://bitbucket.org/milesonerd" class="text-white hover:text-blue-400"><img src="https://cdn.simpleicons.org/bitbucket/0052CC" alt="Bitbucket logo" class="social-icon" loading="lazy"></a>
                         <a href="https://codeberg.org/MilesONerd" class="text-white hover:text-blue-400"><img src="https://cdn.simpleicons.org/codeberg/2185D0" alt="Codeberg logo" class="social-icon" loading="lazy"></a>
                         <a href="https://codepen.io/MilesONerd" class="text-white hover:text-blue-400"><img src="https://cdn.simpleicons.org/codepen/0EBEFF" alt="CodePen logo" class="social-icon" loading="lazy"></a>
