@@ -1,0 +1,23 @@
+name: Update Copyright
+
+on:
+  schedule:
+    - cron: "0 0 1 1 *" 
+
+jobs:
+  update-copyright:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository checkout
+        uses: actions/checkout@v3
+
+      - name: Update Copyright in HTML files
+        run: |
+          current_year=$(date +%Y)
+          find . -name "*.html" -exec sed -i "s/Copyright © 2025-[0-9]*/Copyright © 2024-${current_year}/g" {} +
+          git config --global user.name "Enzo Fuke"
+          git config --global user.email "150525657+MilesONerd@users.noreply.github.com"
+          git add .
+          git commit -m "Updating Copyright to 2025-${current_year}"
+          git push
