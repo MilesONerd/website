@@ -61,6 +61,32 @@
             from, to { border-color: transparent }
             50% { border-color: #0f0 }
         }
+        .post-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .post-list li {
+            background-color: #2d3748;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .post-list li:hover {
+            background-color: #4a5568;
+        }
+
+        .post-list a {
+            text-decoration: none;
+            color: #63b3ed;
+            font-weight: bold;
+        }
+
+        .post-list a:hover {
+            color: #e2e8f0;
+        }
         .social-icon {
             width: 8vw !important; 
             height: 8vw !important;
