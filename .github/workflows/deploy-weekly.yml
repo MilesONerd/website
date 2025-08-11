@@ -1,0 +1,23 @@
+name: Deploy semanal no Netlify 💫
+
+on:
+  schedule
+    - cron: '0 0 * * 1'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v3
+
+      - name: Netlify CLI install
+        run: npm install -g netlify-cli
+
+      - name: Deploy on Netlify
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: |
+          netlify deploy --site=$NETLIFY_SITE_ID --auth=$NETLIFY_AUTH_TOKEN --prod --dir=./build
