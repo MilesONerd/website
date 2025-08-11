@@ -1,4 +1,4 @@
-name: Deploy semanal no Netlify 💫
+name: Weekly deployment on Netlify
 
 on:
   schedule:
