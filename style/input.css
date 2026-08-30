@@ -1,0 +1,33 @@
+/* SPDX-License-Identifier: Apache-2.0 OR MIT */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Blinking terminal cursor, used in the site header before "~/milesonerd" */
+@keyframes cursor-blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+.cursor-blink {
+  animation: cursor-blink 1s step-end infinite;
+}
+
+/* Typographic styling for HTML rendered from Markdown (see Prose component) */
+.prose-content {
+  @apply text-neutral-300 leading-relaxed;
+}
+.prose-content h2 {
+  @apply text-xl text-white mt-8 mb-3;
+}
+.prose-content p {
+  @apply mb-4;
+}
+.prose-content a {
+  @apply text-red-500 underline hover:text-red-400;
+}
+.prose-content code {
+  @apply bg-neutral-900 px-1.5 py-0.5 rounded text-sm text-red-400;
+}
+.prose-content pre {
+  @apply bg-neutral-900 border border-neutral-800 p-4 rounded overflow-x-auto mb-4;
+}
