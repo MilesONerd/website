@@ -1,0 +1,19 @@
+# SPDX-License-Identifier: CC-BY-4.0
+# List of projects shown in the ./projects section on the Home page.
+- name: "aurora"
+  description: "A sweet, elegant, and slightly mischievous AI partner."
+  url: "https://github.com/MilesONerdBot"
+  tags: ["ai", "agent", "llm", "deep-learning"]
+- name: "neurenix"
+  description: "AI framework optimized for embedded devices with support for multiple GPUs and distributed clusters."
+  url: "https://github.com/MilesONerd/neurenix"
+  tags: ["ai", "deep-learning", "python", "framework"]
+- name: "closure-next"
+  description: "A modern and optimized version of the Closure Library, reimagined for the latest JavaScript technologies."
+  url: "https://github.com/MilesONerd/closure-next"
+  tags: ["closure-library", "node.js", "typescript", "web"]
+- name: "DotNET Build Buddy"
+  description: "A VS Code extension that manages .NET projects and provides NuGet compatibility checking."
+  url: "https://github.com/MilesONerd/DotNET-Build-Buddy"
+  tags: ["dotnet", "vscode", "typescript", "nuget"]
+
