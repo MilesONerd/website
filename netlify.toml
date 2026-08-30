@@ -1,0 +1,17 @@
+[build]
+  # 1) gen-content reads content/ and writes dist/ (HTML pages + atom.xml),
+  #    clearing dist/ first.
+  # 2) bun/tailwindcss then scans src/**/*.rs for class="..." strings and
+  #    writes the compiled stylesheet straight into dist/style.css.
+  command = "cargo run --release --bin gen-content && bun install && bun run build:css"
+  publish = "dist"
+
+[[headers]]
+  for = "/atom.xml"
+  [headers.values]
+    Content-Type = "application/atom+xml; charset=utf-8"
+
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404

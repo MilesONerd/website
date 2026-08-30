@@ -1,0 +1,15 @@
+{
+  "name": "build-tailwind-site-rust",
+  "private": true,
+  "description": "Tailwind CSS build for the Rust/Leptos static site",
+  "packageManager": "bun@1.4.0",
+  "engines": {
+    "bun": "1.4.0"
+  }
+  "scripts": {
+    "build:css": "tailwindcss -i ./style/input.css -o ./dist/style.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.14"
+  }
+}

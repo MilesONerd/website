@@ -1,0 +1,30 @@
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+# Copyright (c) 2026 Enzo (MilesONerd)
+
+[package]
+name = "gen_content"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0 OR MIT"
+description = "Build-time generator: Markdown+YAML content -> static HTML (via Leptos SSR) + Atom feed"
+publish = false
+
+[[bin]]
+name = "gen-content"
+path = "src/main.rs"
+
+[dependencies]
+leptos = { version = "0.8.20", default-features = false, features = ["ssr"] }
+gray_matter = "0.3.2"
+pulldown-cmark = "0.13.4"
+serde = { version = "1.0.229", features = ["derive"] }
+serde_yaml_ng = "0.10.0"
+chrono = { version = "0.4.45", default-features = false, features = ["std", "clock", "serde"] }
+atom_syndication = "0.12.10"
+walkdir = "2.5.0"
+anyhow = "1.0.104"
+slug = "0.1.6"
+
+[profile.release]
+opt-level = "z"
+lto = true
