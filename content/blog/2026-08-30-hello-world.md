@@ -83,4 +83,4 @@ But that's half the fun.
 
 Hello, World. 🦀
 
-> If it hasn't worked out yet, it's because it's not over yet.
+- If it hasn't worked out yet, it's because it's not over yet
