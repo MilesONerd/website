@@ -4,6 +4,10 @@
   description: "A sweet, elegant, and slightly mischievous AI partner."
   url: "https://github.com/MilesONerdBot"
   tags: ["ai", "agent", "llm", "deep-learning"]
+- name: "yt-tui"
+  description: "A terminal YouTube player: yt-dlp for search, a single long-lived mpv instance for playback, and a ratatui interface."
+  url: "https://github.com/MilesONerd/yt-tui"
+  tags: ["youtube", "terminal", "yt-dlp", "mpv"]
 - name: "neurenix"
   description: "AI framework optimized for embedded devices with support for multiple GPUs and distributed clusters."
   url: "https://github.com/MilesONerd/neurenix"
