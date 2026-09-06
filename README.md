@@ -2,6 +2,8 @@
 
 <!-- SPDX-License-Identifier: Apache-2.0 OR MIT -->
 
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/MilesONerd/yt-tui)
+
 Personal website (portfolio + blog) with a terminal aesthetic (black, white,
 red accents). Generated as 100% static HTML at build time by a Rust binary
 that uses [Leptos](https://leptos.dev) components in SSR mode (no WASM sent
