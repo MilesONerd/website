@@ -2,7 +2,7 @@
 
 <!-- SPDX-License-Identifier: Apache-2.0 OR MIT -->
 
-[![License: MIT OR Apache-2.0](https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-blue.svg)](https://github.com/MilesONerd/website)
+[![License: MIT OR Apache-2.0](https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-blue.svg)](https://gitlab.com/MilesONerd/website)
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/MilesONerd/website)
 
 Personal website (portfolio + blog) with a terminal aesthetic (black, white,

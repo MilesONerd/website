@@ -102,7 +102,7 @@ pub fn SiteFooter(year: String) -> impl IntoView {
             <div class="max-w-3xl mx-auto px-6 py-8 flex flex-col gap-2">
                 <p>
                     {copyright}
-                    <a class="text-red-500 hover:text-red-400 underline" href="https://github.com/MilesONerd/website" target="_blank" rel="noopener">
+                    <a class="text-red-500 hover:text-red-400 underline" href="https://gitlab.com/MilesONerd/website" target="_blank" rel="noopener">
                         "Apache-2.0 OR MIT"
                     </a>
                     "."

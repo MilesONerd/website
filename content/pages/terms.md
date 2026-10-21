@@ -54,4 +54,4 @@ indicates when these terms were most recently revised.
 ## Open Source
 
 The source code of this website is publicly available in its 
-[open-source repository](https://github.com/MilesONerd/website).
+[open-source repository](https://gitlab.com/MilesONerd/website).

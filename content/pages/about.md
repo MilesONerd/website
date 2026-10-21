@@ -39,8 +39,8 @@ openness, and understanding how things work**.
 Whenever possible, I build and share my work as open source.
 
 You can find my projects and source code on 
-[GitHub](https://github.com/MilesONerd) unless explained 
-elsewhere.
+[GitHub](https://github.com/MilesONerd) or [GitLab](https://gitlab.com/MilesONerd)
+unless explained elsewhere.
 
 ## Get in touch
 

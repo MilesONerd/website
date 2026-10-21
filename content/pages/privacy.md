@@ -23,6 +23,6 @@ for details on how Netlify handles personal data.
 # Open Source
 
 The source code of this website is publicly available in its 
-[open-source repository](https://github.com/MilesONerd/website). You can 
+[open-source repository](https://gitlab.com/MilesONerd/website). You can 
 inspect the source code to verify which data collection mechanisms are 
 implemented by the site itself.
