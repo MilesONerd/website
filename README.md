@@ -85,7 +85,7 @@ Edit `content/projects.yaml` and add an entry:
 ```yaml
 - name: "Project name"
   description: "Short description."
-  url: "https://github.com/MilesONerd/repo"
+  url: "https://gitlab.com/MilesONerd/repo" # or https://github.com/MilesONerd/repo
   tags: ["rust"]
 ```
 
